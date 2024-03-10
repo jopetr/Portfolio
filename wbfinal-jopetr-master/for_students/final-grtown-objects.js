@@ -14,7 +14,7 @@ export class Ground extends GrObject {
     constructor() {
         let s = new T.Group();
         let g = new T.BoxGeometry(115,1,115);
-        let tex = new T.TextureLoader().load("./images/asphalt.jpeg");
+        let tex = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/asphalt.jpeg");
         let m = new T.MeshStandardMaterial({map: tex})
         let sm = new T.Mesh(g, m);
         sm.position.y-=0.5;
@@ -27,7 +27,7 @@ export class ConstructionSite extends GrObject {
     constructor() {
         let c = new T.Group();
         let g1 = new T.BoxGeometry(14, 0.1, 39);
-        let tex = new T.TextureLoader().load("./images/dirt.jpeg");
+        let tex = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/dirt.jpeg");
         let m1 = new T.MeshStandardMaterial({map: tex, bumpMap: tex, bumpScale: 0.4});
         let c1 = new T.Mesh(g1, m1);
         c.add(c1);
@@ -141,7 +141,7 @@ export class StreetBlock extends GrObject {
             let geo = new T.BufferGeometry();
             geo.setAttribute('position',new T.BufferAttribute(vert,3));
             geo.computeVertexNormals();
-            let tl = new T.TextureLoader().load("./images/sidewalk.jpg");
+            let tl = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/sidewalk.jpg");
             geo.setAttribute('uv',new T.BufferAttribute(uv,2));
             let mat = new T.MeshStandardMaterial({
             color: "white",
@@ -160,7 +160,7 @@ export class StreetBlock extends GrObject {
         let width = 40;
         for (let i=0; i<width; i++) {
             let g = new T.BoxGeometry(1,0.1,1);
-            let tex = new T.TextureLoader().load("./images/concrete.jpg");
+            let tex = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/concrete.jpg");
             let m = new T.MeshStandardMaterial({map: tex})
             let ss1 = new T.Mesh(g, m);
             let ss2 = new T.Mesh(g, m);
@@ -278,7 +278,7 @@ export class StreetBlock extends GrObject {
         let geo = new T.BufferGeometry();
         geo.setAttribute('position',new T.BufferAttribute(verts,3));
         geo.computeVertexNormals();
-        let tl = new T.TextureLoader().load("./images/grass.jpeg");
+        let tl = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/grass.jpeg");
         geo.setAttribute('uv',new T.BufferAttribute(uvs,2));
         let mat = new T.MeshStandardMaterial({
         color: "white",
@@ -334,7 +334,7 @@ export class StreetBlock extends GrObject {
         let geo2 = new T.BufferGeometry();
         geo2.setAttribute('position',new T.BufferAttribute(verts2,3));
         geo2.computeVertexNormals();
-        let tl2 = new T.TextureLoader().load("./images/grass.jpeg");
+        let tl2 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/grass.jpeg");
         geo2.setAttribute('uv',new T.BufferAttribute(uvs2,2));
         let mat2 = new T.MeshStandardMaterial({
         color: "white",
@@ -346,7 +346,7 @@ export class StreetBlock extends GrObject {
 
         let g1 = new T.BoxGeometry(25,0.1,0);
         let g2 = new T.BoxGeometry(0,0.1,25);
-        let tex = new T.TextureLoader().load("./images/grass.jpeg");
+        let tex = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/grass.jpeg");
         let m = new T.MeshStandardMaterial({map: tex})
         let gb1 = new T.Mesh(g1, m);
         let gb2 = new T.Mesh(g2, m);
@@ -356,14 +356,14 @@ export class StreetBlock extends GrObject {
         gb2.position.set(26, 0.05, 13.5);
 
         let g3 = new T.BoxGeometry(28, 1, 1);
-        tex = new T.TextureLoader().load("./images/bush.jpg");
+        tex = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/bush.jpg");
         m = new T.MeshStandardMaterial({map: tex})
         let b = new T.Mesh(g3, m);
         s.add(b);
         b.position.set(26.5, 0.6, -7.5);
 
         let g4 = new T.BoxGeometry(30, 0.1, 3);
-        tex = new T.TextureLoader().load("./images/concrete.jpg");
+        tex = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/concrete.jpg");
         m = new T.MeshStandardMaterial({map: tex})
         let b2 = new T.Mesh(g4, m);
         s.add(b2);
@@ -505,10 +505,10 @@ export class Store extends GrObject {
             0.5,1
         ]);
         let txts = [];
-        txts[0] = "./images/711front.png";
-        txts[1] = "./images/blbfront.jpeg";
-        txts[2] = "./images/greenroof.jpeg";
-        txts[3] = "./images/blueroof.png";
+        txts[0] = "wbfinal-jopetr-master/for_students/images/711front.png";
+        txts[1] = "wbfinal-jopetr-master/for_students/images/blbfront.jpeg";
+        txts[2] = "wbfinal-jopetr-master/for_students/images/greenroof.jpeg";
+        txts[3] = "wbfinal-jopetr-master/for_students/images/blueroof.png";
         let geo1 = new T.BufferGeometry();
         geo1.setAttribute('position',new T.BufferAttribute(vertices1,3));
         geo1.computeVertexNormals();
@@ -529,7 +529,7 @@ export class Store extends GrObject {
         geo2.computeVertexNormals();
         
         
-        let tl2 = new T.TextureLoader().load("./images/grayconcrete.jpeg");
+        let tl2 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/grayconcrete.jpeg");
         geo2.setAttribute('uv',new T.BufferAttribute(uvs1,2));
         let mat2 = new T.MeshStandardMaterial({
         color: "white",
@@ -630,8 +630,8 @@ export class Resteraunt extends GrObject {
             0,1
         ]);
         let txts = [];
-        txts[0] = "./images/mcfront.png";
-        txts[1] = "./images/kfcfront.png";
+        txts[0] = "wbfinal-jopetr-master/for_students/images/mcfront.png";
+        txts[1] = "wbfinal-jopetr-master/for_students/images/kfcfront.png";
         let geo1 = new T.BufferGeometry();
         geo1.setAttribute('position',new T.BufferAttribute(vertices1,3));
         geo1.computeVertexNormals();
@@ -652,7 +652,7 @@ export class Resteraunt extends GrObject {
         geo2.computeVertexNormals();
         
         
-        let tl2 = new T.TextureLoader().load("./images/beigebrick.png");
+        let tl2 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/beigebrick.png");
         geo2.setAttribute('uv',new T.BufferAttribute(uvs1,2));
         let mat2 = new T.MeshStandardMaterial({
         color: "white",
@@ -680,7 +680,7 @@ export class Resteraunt extends GrObject {
         let geo4 = new T.BufferGeometry();
         geo4.setAttribute('position',new T.BufferAttribute(vertices3,3));
         geo4.computeVertexNormals();
-        let tl3 = new T.TextureLoader().load("./images/redroof.png");
+        let tl3 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/redroof.png");
         geo4.setAttribute('uv',new T.BufferAttribute(uvs3,2));
         let mat3 = new T.MeshStandardMaterial({
         color: "white",
@@ -722,7 +722,7 @@ export class ApartmentBuilding extends GrObject {
         let geo1 = new T.BufferGeometry();
         geo1.setAttribute('position',new T.BufferAttribute(vertices1,3));
         geo1.computeVertexNormals();
-        let tl1 = new T.TextureLoader().load("./images/apartmentface.jpg");
+        let tl1 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/apartmentface.jpg");
         let d = new T.Group();
         geo1.setAttribute('uv',new T.BufferAttribute(uvs1,2));
         let mat1 = new T.MeshStandardMaterial({
@@ -818,7 +818,7 @@ export class ApartmentBuilding extends GrObject {
         let geo2 = new T.BufferGeometry();
         geo2.setAttribute('position',new T.BufferAttribute(vertices2,3));
         geo2.computeVertexNormals();
-        let tl2 = new T.TextureLoader().load("./images/blackroof.jpeg");
+        let tl2 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/blackroof.jpeg");
         geo2.setAttribute('uv',new T.BufferAttribute(uvs2,2));
         let mat2 = new T.MeshStandardMaterial({
         color: "white",
@@ -847,9 +847,9 @@ export class Bank extends GrObject {
         let b1 = new T.BoxGeometry(1.3,0.5,1);
         let b2 = new T.BoxGeometry(1.3, 0.5,0.01);
         let b3 = new T.BoxGeometry(0.01,0.5,1);
-        let t1 = new T.TextureLoader().load("./images/grayconcrete.jpeg");
-        let t2 = new T.TextureLoader().load("./images/bankfront.png");
-        let t3 = new T.TextureLoader().load("./images/bankgarage.png");
+        let t1 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/grayconcrete.jpeg");
+        let t2 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/bankfront.png");
+        let t3 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/bankgarage.png");
         let m1 = new T.MeshStandardMaterial({map: t1});
         let m2 = new T.MeshStandardMaterial({map: t2});
         let m3 = new T.MeshStandardMaterial({map: t3});
@@ -956,7 +956,7 @@ export class BackGroundCar extends GrObject {
         let geo1 = new T.BufferGeometry();
         geo1.setAttribute('position',new T.BufferAttribute(vertices1,3));
         geo1.computeVertexNormals();
-        let tl1 = new T.TextureLoader().load("./images/car/carfront"+String(variant)+".png");
+        let tl1 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carfront"+String(variant)+".png");
         geo1.setAttribute('uv',new T.BufferAttribute(uvs1,2));
         let mat1 = new T.MeshStandardMaterial({
         color: "white",
@@ -1053,7 +1053,7 @@ export class BackGroundCar extends GrObject {
         let geo2 = new T.BufferGeometry();
         geo2.setAttribute('position',new T.BufferAttribute(vertices2,3));
         geo2.computeVertexNormals();
-        let tl2 = new T.TextureLoader().load("./images/car/car"+String(variant)+".png");
+        let tl2 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/car"+String(variant)+".png");
         geo2.setAttribute('uv',new T.BufferAttribute(uvs2,2));
         let mat2 = new T.MeshStandardMaterial({
         color: "white",
@@ -1087,7 +1087,7 @@ export class BackGroundCar extends GrObject {
         let geo3 = new T.BufferGeometry();
         geo3.setAttribute('position',new T.BufferAttribute(vertices3,3));
         geo3.computeVertexNormals();
-        let tl3 = new T.TextureLoader().load("./images/car/carback"+String(variant)+".png");
+        let tl3 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carback"+String(variant)+".png");
         geo3.setAttribute('uv',new T.BufferAttribute(uvs3,2));
         let mat3 = new T.MeshStandardMaterial({
         color: "white",
@@ -1172,7 +1172,7 @@ export class BackGroundCar extends GrObject {
         let geo4 = new T.BufferGeometry();
         geo4.setAttribute('position',new T.BufferAttribute(vertices4,3));
         geo4.computeVertexNormals();
-        let tl4 = new T.TextureLoader().load("./images/car/carwindow"+String(variant)+".png");
+        let tl4 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carwindow"+String(variant)+".png");
         geo4.setAttribute('uv',new T.BufferAttribute(uvs4,2));
         let mat4 = new T.MeshStandardMaterial({
         color: "white",
@@ -1272,13 +1272,13 @@ export class BackGroundCar extends GrObject {
           let p = new T.Group();
           const ol = new OBJLoader();
           let ml = new MTLLoader();
-          ml.load("./house-obj/house.mtl", function(mat) {ol.setMaterials(mat);});
-          ol.load("./house-obj/house.obj", function(obj) {p.add(obj);});
+          ml.load("wbfinal-jopetr-master/for_students/house-obj/house.mtl", function(mat) {ol.setMaterials(mat);});
+          ol.load("wbfinal-jopetr-master/for_students/house-obj/house.obj", function(obj) {p.add(obj);});
           let s = 0.02;
           p.scale.set(s,s,s);
           ps.add(p);
           let g1 = new T.BoxGeometry(9.5, 1, 2);
-          let tl = new T.TextureLoader().load("./images/policesign.png");
+          let tl = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/policesign.png");
           let m = new T.MeshStandardMaterial({map: tl});
           let s1 = new T.Mesh(g1,m);
           ps.add(s1);
@@ -1332,7 +1332,7 @@ export class BackGroundCar extends GrObject {
             let geo1 = new T.BufferGeometry();
             geo1.setAttribute('position',new T.BufferAttribute(vertices1,3));
             geo1.computeVertexNormals();
-            let tl1 = new T.TextureLoader().load("./images/car/carfront"+String(variant)+".png");
+            let tl1 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carfront"+String(variant)+".png");
             geo1.setAttribute('uv',new T.BufferAttribute(uvs1,2));
             let mat1 = new T.MeshStandardMaterial({
             color: "white",
@@ -1429,7 +1429,7 @@ export class BackGroundCar extends GrObject {
             let geo2 = new T.BufferGeometry();
             geo2.setAttribute('position',new T.BufferAttribute(vertices2,3));
             geo2.computeVertexNormals();
-            let tl2 = new T.TextureLoader().load("./images/car/car"+String(variant)+".png");
+            let tl2 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/car"+String(variant)+".png");
             geo2.setAttribute('uv',new T.BufferAttribute(uvs2,2));
             let mat2 = new T.MeshStandardMaterial({
             color: "white",
@@ -1463,7 +1463,7 @@ export class BackGroundCar extends GrObject {
             let geo3 = new T.BufferGeometry();
             geo3.setAttribute('position',new T.BufferAttribute(vertices3,3));
             geo3.computeVertexNormals();
-            let tl3 = new T.TextureLoader().load("./images/car/carback"+String(variant)+".png");
+            let tl3 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carback"+String(variant)+".png");
             geo3.setAttribute('uv',new T.BufferAttribute(uvs3,2));
             let mat3 = new T.MeshStandardMaterial({
             color: "white",
@@ -1548,7 +1548,7 @@ export class BackGroundCar extends GrObject {
             let geo4 = new T.BufferGeometry();
             geo4.setAttribute('position',new T.BufferAttribute(vertices4,3));
             geo4.computeVertexNormals();
-            let tl4 = new T.TextureLoader().load("./images/car/carwindow"+String(variant)+".png");
+            let tl4 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carwindow"+String(variant)+".png");
             geo4.setAttribute('uv',new T.BufferAttribute(uvs4,2));
             let mat4 = new T.MeshStandardMaterial({
             color: "white",

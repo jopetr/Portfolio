@@ -19,7 +19,7 @@
 import { GrWorld } from "../libs/CS559-Framework/GrWorld.js";
 import * as T from "../libs/CS559-Three/build/three.module.js";
 import { WorldUI } from "../libs/CS559-Framework/WorldUI.js";
-import { StreetBlock, Ground, Store, Resteraunt, ApartmentBuilding, Bank, PalmTree, BackGroundCar, ConstructionSite,PoliceStation, StationaryCar } from "../for_students/final-grtown-objects.js";
+import { StreetBlock, Ground, Store, Resteraunt, ApartmentBuilding, Bank, PalmTree, BackGroundCar, ConstructionSite,PoliceStation, StationaryCar } from "./final-grtown-objects.js";
 
 import { GrBulldozer, GrCrane, GrDumptruck, GrExcavator} from "./construction-objects.js";
 import { GrObject } from "../libs/CS559-Framework/GrObject.js";
@@ -35,12 +35,12 @@ import { Copter } from "./copters.js";
 // make the world
 
 let url = [];
-url[0] = "./images/skybox/Right.png";
-url[1] = "./images/skybox/Left.png";
-url[2] = "./images/skybox/Top.png";
-url[3] = "./images/skybox/Front.png";
-url[4] = "./images/skybox/Back.png";
-url[5] = "./images/skybox/Bottom.png";
+url[0] = "wbfinal-jopetr-master/for_students/images/skybox/Right.png";
+url[1] = "wbfinal-jopetr-master/for_students/images/skybox/Left.png";
+url[2] = "wbfinal-jopetr-master/for_students/images/skybox/Top.png";
+url[3] = "wbfinal-jopetr-master/for_students/images/skybox/Front.png";
+url[4] = "wbfinal-jopetr-master/for_students/images/skybox/Back.png";
+url[5] = "wbfinal-jopetr-master/for_students/images/skybox/Bottom.png";
 let skytext = new T.CubeTextureLoader().load(url);
 
 let world = new GrWorld({
@@ -91,7 +91,7 @@ class CenterBlock extends GrObject {
     constructor() {
         let c = new T.Group();
         let g = new T.CylinderBufferGeometry(8,8,0.1);
-        let tex = new T.TextureLoader().load("./images/concrete.jpg");
+        let tex = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/concrete.jpg");
         let m = new T.MeshStandardMaterial({map: tex})
         let b = new T.Mesh(g, m);
         c.add(b);

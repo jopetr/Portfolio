@@ -720,7 +720,7 @@ export class GrBird extends GrObject {
 export class Tent extends GrObject {
     constructor () {
         let t = new T.Group();
-        let m = shaderMaterial("./shaders/tent.vs", "./shaders/tent.fs", {
+        let m = shaderMaterial("wbfinal-jopetr-master/for_students/shaders/tent.vs", "wbfinal-jopetr-master/for_students/shaders/tent.fs", {
             side: T.DoubleSide,
             uniforms: {
               width: { value: 0.5},

@@ -31,7 +31,7 @@ export class GetawayCar extends GrObject {
         let geo1 = new T.BufferGeometry();
         geo1.setAttribute('position',new T.BufferAttribute(vertices1,3));
         geo1.computeVertexNormals();
-        let tl1 = new T.TextureLoader().load("./images/car/carfront1.png");
+        let tl1 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carfront1.png");
         geo1.setAttribute('uv',new T.BufferAttribute(uvs1,2));
         let mat1 = new T.MeshStandardMaterial({
         color: "white",
@@ -128,7 +128,7 @@ export class GetawayCar extends GrObject {
         let geo2 = new T.BufferGeometry();
         geo2.setAttribute('position',new T.BufferAttribute(vertices2,3));
         geo2.computeVertexNormals();
-        let tl2 = new T.TextureLoader().load("./images/car/car1.png");
+        let tl2 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/car1.png");
         geo2.setAttribute('uv',new T.BufferAttribute(uvs2,2));
         let mat2 = new T.MeshStandardMaterial({
         color: "white",
@@ -162,7 +162,7 @@ export class GetawayCar extends GrObject {
         let geo3 = new T.BufferGeometry();
         geo3.setAttribute('position',new T.BufferAttribute(vertices3,3));
         geo3.computeVertexNormals();
-        let tl3 = new T.TextureLoader().load("./images/car/carback1.png");
+        let tl3 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carback1.png");
         geo3.setAttribute('uv',new T.BufferAttribute(uvs3,2));
         let mat3 = new T.MeshStandardMaterial({
         color: "white",
@@ -247,7 +247,7 @@ export class GetawayCar extends GrObject {
         let geo4 = new T.BufferGeometry();
         geo4.setAttribute('position',new T.BufferAttribute(vertices4,3));
         geo4.computeVertexNormals();
-        let tl4 = new T.TextureLoader().load("./images/car/carwindow1.png");
+        let tl4 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carwindow1.png");
         geo4.setAttribute('uv',new T.BufferAttribute(uvs4,2));
         let mat4 = new T.MeshStandardMaterial({
         color: "white",
@@ -393,7 +393,7 @@ export class GetawayCar extends GrObject {
             let geo1 = new T.BufferGeometry();
             geo1.setAttribute('position',new T.BufferAttribute(vertices1,3));
             geo1.computeVertexNormals();
-            let tl1 = new T.TextureLoader().load("./images/car/carfront4.png");
+            let tl1 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carfront4.png");
             geo1.setAttribute('uv',new T.BufferAttribute(uvs1,2));
             let mat1 = new T.MeshStandardMaterial({
             color: "white",
@@ -490,7 +490,7 @@ export class GetawayCar extends GrObject {
             let geo2 = new T.BufferGeometry();
             geo2.setAttribute('position',new T.BufferAttribute(vertices2,3));
             geo2.computeVertexNormals();
-            let tl2 = new T.TextureLoader().load("./images/car/car4.png");
+            let tl2 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/car4.png");
             geo2.setAttribute('uv',new T.BufferAttribute(uvs2,2));
             let mat2 = new T.MeshStandardMaterial({
             color: "white",
@@ -524,7 +524,7 @@ export class GetawayCar extends GrObject {
             let geo3 = new T.BufferGeometry();
             geo3.setAttribute('position',new T.BufferAttribute(vertices3,3));
             geo3.computeVertexNormals();
-            let tl3 = new T.TextureLoader().load("./images/car/carback4.png");
+            let tl3 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carback4.png");
             geo3.setAttribute('uv',new T.BufferAttribute(uvs3,2));
             let mat3 = new T.MeshStandardMaterial({
             color: "white",
@@ -609,7 +609,7 @@ export class GetawayCar extends GrObject {
             let geo4 = new T.BufferGeometry();
             geo4.setAttribute('position',new T.BufferAttribute(vertices4,3));
             geo4.computeVertexNormals();
-            let tl4 = new T.TextureLoader().load("./images/car/carwindow4.png");
+            let tl4 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carwindow4.png");
             geo4.setAttribute('uv',new T.BufferAttribute(uvs4,2));
             let mat4 = new T.MeshStandardMaterial({
             color: "white",
@@ -775,7 +775,7 @@ constructor() {
     let geo1 = new T.BufferGeometry();
     geo1.setAttribute('position',new T.BufferAttribute(vertices1,3));
     geo1.computeVertexNormals();
-    let tl1 = new T.TextureLoader().load("./images/car/carfront4.png");
+    let tl1 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carfront4.png");
     geo1.setAttribute('uv',new T.BufferAttribute(uvs1,2));
     let mat1 = new T.MeshStandardMaterial({
     color: "white",
@@ -872,7 +872,7 @@ constructor() {
     let geo2 = new T.BufferGeometry();
     geo2.setAttribute('position',new T.BufferAttribute(vertices2,3));
     geo2.computeVertexNormals();
-    let tl2 = new T.TextureLoader().load("./images/car/car4.png");
+    let tl2 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/car4.png");
     geo2.setAttribute('uv',new T.BufferAttribute(uvs2,2));
     let mat2 = new T.MeshStandardMaterial({
     color: "white",
@@ -906,7 +906,7 @@ constructor() {
     let geo3 = new T.BufferGeometry();
     geo3.setAttribute('position',new T.BufferAttribute(vertices3,3));
     geo3.computeVertexNormals();
-    let tl3 = new T.TextureLoader().load("./images/car/carback4.png");
+    let tl3 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carback4.png");
     geo3.setAttribute('uv',new T.BufferAttribute(uvs3,2));
     let mat3 = new T.MeshStandardMaterial({
     color: "white",
@@ -991,7 +991,7 @@ constructor() {
     let geo4 = new T.BufferGeometry();
     geo4.setAttribute('position',new T.BufferAttribute(vertices4,3));
     geo4.computeVertexNormals();
-    let tl4 = new T.TextureLoader().load("./images/car/carwindow4.png");
+    let tl4 = new T.TextureLoader().load("wbfinal-jopetr-master/for_students/images/car/carwindow4.png");
     geo4.setAttribute('uv',new T.BufferAttribute(uvs4,2));
     let mat4 = new T.MeshStandardMaterial({
     color: "white",
